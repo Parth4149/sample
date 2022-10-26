@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/53323cb170.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <form class="search-form">
+    <div class="search-bar">
+      <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+      <input class="search" type="text" placeholder="Search City or State">
+    </div>
+    <div class="filter-container">
+      <div class= "filter-btn">Filter<i class="fa-solid fa-angle-down"></i></div>
+      <ul class="filter-list">
+        <li data-value="1">city</li>
+        <li data-value="2">state</li>
+        <li data-value="3">rank low to high </li>
+        <li data-value="4">rank high to low</li>
+        <li data-value="5">Population low to high</li>
+        <li data-value="6">Population high to low</li>
+      </ul>
+    </div>
+    <ul class="suggestions">
+      <!-- <li>Filter for a city</li> -->
+      <!-- <li>or a state</li> -->
+    </ul>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
