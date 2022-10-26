@@ -20,7 +20,7 @@ function addItem(e) {
   populateList(items, itemsList);
   localStorage.setItem('items', JSON.stringify(items)); // (key, value)
   // The reset() method resets the values of all elements in a form (same as clicking the Reset button).
-  // Tip: Use the submit() method to submit the form.
+  // 
   this.reset();
 }
 
@@ -40,8 +40,9 @@ function toggleDone(e) {
   const el = e.target;
   const index = el.dataset.index;
   items[index].done = !items[index].done;
-  localStorage.setItem('items', JSON.stringify(items));
-  populateList(items, itemsList);
+  // update localStorage
+  localStorage.setItem('items', JSON.stringify(items)); 
+  // populateList(items, itemsList);
 }
 
 addItems.addEventListener('submit', addItem);
