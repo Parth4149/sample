@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-﻿Feel free to submit a PR adding a link to your own recaps, guides or reviews!
-=======
+
 Feel free to submit a PR adding a link to your own recaps, guides or reviews!
->>>>>>> 264dc77d144ea337a1bafc0f001c77ca72713f54
 * 01 - JavaScript Drum Kit [Link](https://parth4149.github.io/sample.html.io/01%20-%20JavaScript%20Drum%20Kit/index.html) 
 * 02 - JS and CSS Clock [Link](https://parth4149.github.io/sample.html.io/02%20-%20JS%20and%20CSS%20Clock/index.html) 
 * 03 - CSS Variables [Link](https://parth4149.github.io/sample.html.io/03%20-%20CSS%20Variables/index.html) 
