@@ -15,3 +15,15 @@ Feel free to submit a PR adding a link to your own recaps, guides or reviews!
 * 13 - Slide in on Scroll [Link](https://parth4149.github.io/sample.html.io/13%20-%20Slide%20in%20on%20Scroll/index.html)
 * 14 - JavaScript References VS Copying 
 * 15 - LocalStorage [Link](https://parth4149.github.io/sample.html.io/15%20-%20LocalStorage/index.html)
+
+#
+### _Frontend Mentor_
+* 01 - Automotive-car-design [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/1automotive-car-design/index.html)
+* 02 - PriceBlock [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/2PriceBlock/index.html)
+* 03 - 3Newspaper [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/3Newspaper/index.html)
+* 04 - Testimonials-Grid-section-main [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/5Testimonials-Grid-section-main/index.html)
+* 05 - Footwear-design [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/5footwear-design/index.html)
+* 06 - Shoes-master [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/6shoes-master/index.html)
+* 07 - Interactive-Rating-Component-Main [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/7-Interactive-Rating-Component-Main/index.html)
+* 08 - 8-FAQ-Accordion-Card-main [Link](https://parth4149.github.io/sample.html.io/Frontend%20Mentor/8-FAQ-Accordion-Card-main/index.html)
+* 09 - 
