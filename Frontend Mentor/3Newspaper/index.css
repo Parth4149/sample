@@ -1,0 +1,83 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1rem, calc(5vw + 1rem), 2.5rem);
+}
+p {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    /* margin-top: 1rem; */
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    width: 95%;
+    margin: auto; /* nav will place on center*/
+    border-top: 1.5px solid lightslategray;
+    border-bottom: 1.5px solid lightslategray;
+}
+nav ul{
+    display: flex;
+    list-style-type:none;
+    width: 100%;
+    justify-content: space-around;
+    font-size: clamp(.5rem, calc(5vw + .1rem), 1rem);;
+    padding: 0;
+}
+nav a {
+    color: black;
+}
+
+main {
+    display: flex;
+    box-sizing: border-box;
+
+}
+main > *+* {
+    border-left: 1.5px solid lightslategray;
+    margin-top: 1rem;    
+}
+main article {
+    /* Width of all the article will be equal */
+    flex: 1;
+    text-align: justify;
+    padding: 0.5rem;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 14px;
+    }
+    main {
+        flex-direction: column;
+    }
+    main> *+* {
+        border: none;
+    }
+    main article img {
+        padding: 0 1rem;
+    }
+}

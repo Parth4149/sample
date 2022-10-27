@@ -1,0 +1,124 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    color: white;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    align-self: center;
+}
+nav div{
+    font-size: clamp(1rem, calc(5vw + 1rem), 2.5rem);
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: .5rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav li:last-child{
+    color: cyan;
+    background-color: #00c2ff;
+}
+
+header{
+    background-image: url(./car-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    /* background-attachment: fixed; */
+    background-position:center center;
+}
+
+header .content {
+    /** automaticaly center the content */
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+header .content> *+*{
+    margin-top: 1rem;
+}
+header .content h1{
+    font-size: clamp(2rem, calc(5vw + 1rem), 5rem);
+    margin: 0;
+}
+header .content button{
+    background-color: #00c2ff;
+    border: 0;
+    color: white;
+    font-size: clamp(1rem, calc(5vw - 1rem), 1.5rem);;
+    padding: 0.5rem 1rem;
+}
+footer {
+    display: flex;
+    height: auto;
+    background-color: rgb(12, 12, 28);
+    justify-content: center;
+}
+footer ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+footer ul li strong {
+    color:#00c2ff;
+}
+
+@media screen and (max-width: 700px){
+    nav {
+        width: 95%;
+        height: auto;
+    }
+    nav ul{
+        margin: 0;
+    }
+
+    nav ul>li:last-child{
+        display: none;
+    }
+
+    nav ul ,footer ul{
+        flex-direction: column;
+    }
+
+    footer ul> *+*{
+        margin-top: 1rem;
+    }
+
+    footer li{
+        text-align: center;
+    }
+}
