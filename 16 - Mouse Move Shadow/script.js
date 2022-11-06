@@ -6,7 +6,7 @@ const walk = 100; // 100px
 function shadow(e) {
   // const width = hero.offsetWidth;
   // const height = hero.offsetHeight;
-  const { offsetWidth: width , offsetHeight: height }  = hero; // using destructor
+  const { offsetWidth: width , offsetHeight: height } = hero; // using destructor
   let { offsetX: x, offsetY: y} = e;
   // console.log(x, y);
 
@@ -27,7 +27,7 @@ function shadow(e) {
   ${yWalk}px ${-xWalk}px 0 rgba(255,0,0,0.7) 
   
   `; // 
-  console.log(xWalk, yWalk);
+  // console.log(xWalk, yWalk);
 }
 
 

@@ -15,7 +15,6 @@ const sortedBands = bands.sort((a,b) => {
 
 
 
-
 bandList.innerHTML = bands.map( band => {
-    return`<li>${band}</li>`
+    return `<li>${band}</li>`;
 }).join('');
