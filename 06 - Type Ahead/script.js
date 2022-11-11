@@ -68,7 +68,7 @@ const suggestions = document.querySelector('.suggestions');
 const filterBtn = document.querySelector('.filter-btn');
 const closeBtn = document.querySelector('.close-btn');
 searchInput.addEventListener('change', displayMatches);
-searchInput.addEventListener('keydown', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
 
 
 function changeFilter() {
