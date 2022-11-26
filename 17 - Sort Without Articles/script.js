@@ -10,9 +10,8 @@ function strip(bandName) {
 }
 
 const sortedBands = bands.sort((a,b) => {
-    return  strip(a) < strip(b) ? -1: 1;
+    return strip(a) < strip(b) ? -1: 1;
 });
-
 
 
 bandList.innerHTML = bands.map( band => {
