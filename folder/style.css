@@ -57,7 +57,7 @@ br {
 .head1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .head1 img {
   display: block;
@@ -68,7 +68,7 @@ br {
 .head3 {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .head3 img {
