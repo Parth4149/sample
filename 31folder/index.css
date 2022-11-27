@@ -35,13 +35,7 @@ a {
   text-decoration: none;
   color: white;
 }
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  margin-top: 0px;
-  /* line-height: 1rem; */
-}
+
 h2 {
   margin-bottom: 1.25rem; /**/
 }
