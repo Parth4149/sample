@@ -138,9 +138,9 @@ button:active .button_top {
     margin: auto;
   }
   .information,
- .information-2 {
+  .information-2 {
     padding: 1rem 4rem;
- }
+  }
 }
 
 /* .section > * {
