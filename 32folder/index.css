@@ -48,7 +48,7 @@ body {
   margin-top: 1rem;
 }
 
-button {
+.donate-btn {
   /* Variables */
   margin-top: 1rem;
  --button_outline_color: #000000;
@@ -75,12 +75,12 @@ button {
  transition: transform 0.1s ease;
 }
 
-button:hover .button_top {
+.donate-btn:hover .button_top {
   /* Pull the button upwards when hovered */
  transform: translateY(-0.33em);
 }
 
-button:active .button_top {
+.donate-btn:active .button_top {
   /* Push the button downwards when pressed */
  transform: translateY(0);
 }
