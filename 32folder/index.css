@@ -31,30 +31,14 @@ body {
   --button_radius: 0.75em;
   --button_color: #ffffff;
 }
-a {
-  text-decoration: none;
-  color: white;
-}
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  margin-top: 0px;
-  /* line-height: 1rem; */
-}
-h2 {
-  margin-bottom: 1.25rem; /**/
-}
-h3 {
-  font-size: 1.1rem;
-}
-header {
+
+.header {
   text-align: center;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   color: gray;
 }
-header sup {
+.header sup {
   font-size: 0.6rem;
 }
 .space {
@@ -137,7 +121,7 @@ button:active .button_top {
     background: white;
     margin: auto;
   }
-  .information,
+  .information-1,
   .information-2 {
     padding: 1rem 4rem;
   }
@@ -180,7 +164,7 @@ button:active .button_top {
   color: #ffffff;
 }
 
-.information,
+.information-1,
  .information-2 {
   padding: 1rem ;
   line-height: 1;
@@ -188,7 +172,7 @@ button:active .button_top {
   font-size: 0.8rem;
   letter-spacing: 0.5px;
 }
-.information h4 , .information-2 h4 {
+.information-1 h4 , .information-2 h4 {
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
