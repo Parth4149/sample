@@ -54,7 +54,25 @@ br {
   font-size: 20px;
   color: white;
 }
+.head1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.head1 img {
+  display: block;
+  max-width: 17rem;
+}
 
+.head3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.head3 img {
+  height: 3rem;
+}
 
 /* Create two equal columns that floats next to each other */
 .column {
