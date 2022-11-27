@@ -1,0 +1,188 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  line-height: 1.3;
+  background: white;
+  /* background-color: var(--lightgray); */
+  font-size: 15px;
+}
+
+.donate-section {
+  margin-top: 1rem;
+}
+
+.header {
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: rgb(97, 95, 95);
+}
+.header sup {
+  font-size: 0.6rem;
+}
+.space {
+  height: 0.5rem;
+}
+.donate-btn {
+  margin-top: 1rem;
+}
+
+.donate-btn {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.75em;
+  background: #ffffff;
+  text-transform: uppercase;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 0.75em;
+  padding: 0.2rem 0.7rem;
+  background: #ffffff;
+  color: var(--red);
+  transform: translateY(-0.1em);
+  transition: transform 0.1s ease;
+}
+
+.donate-btn:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.23em);
+}
+
+.donate-btn:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+/* width: 90rem;  */
+.section {
+  border-radius: 0.5rem; /* 8px*/
+  overflow: hidden;
+  max-width: 100vw;
+  margin: auto;
+  text-align: justify;
+  padding: 0.4rem;
+}
+
+.horizontal-line {
+  margin: 1rem 0;
+  border-bottom: 2px solid white;
+}
+
+/* .section > * {
+  padding: var(--paddingx) var(--paddingy);
+} */
+
+/* Community */
+.community {
+  background: rgb(167, 164, 164);
+  /* background-color: white; */
+  color: white;
+  padding: 0.5rem;
+}
+
+.community .subtitle {
+  font-size: 1rem;
+  /* color: var(--yellow); */
+  /* font-weight: bold; */
+}
+.community p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+.community p span {
+  font-weight: 600;
+}
+
+.header-information {
+  display: flex;
+}
+
+.header-information,
+.why {
+  background: red;
+  color: #ffffff;
+}
+
+.information-1,
+.information-2 {
+  padding: 0.6rem;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  /* letter-spacing: 0.5px; */
+}
+.information-1 h4,
+.information-2 h4 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.header-information p {
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.information-2 {
+  background: red;
+  color: #ffffff;
+}
+.information-2 span {
+  font-weight: 600;
+}
+
+.information-2 article {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* Desktop media query */
+@media only screen and (width >= 960px) {
+  html {
+    font-size: 16px;
+  }
+  /* 960px*/
+  .section {
+    max-width: 990px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .community {
+    grid-column: 1 / 3;
+    padding: 2rem;
+  }
+  .vertical-line {
+    height: 75%;
+    width: 0.5rem;
+    background: white;
+    margin: auto;
+  }
+  .information-1,
+  .information-2 {
+    padding: 1rem 4rem;
+  }
+}
