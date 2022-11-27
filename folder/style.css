@@ -62,6 +62,7 @@ br {
 .head1 img {
   display: block;
   max-width: 17rem;
+  max-height: 3rem;
 }
 
 .head3 {
@@ -71,7 +72,8 @@ br {
 }
 
 .head3 img {
-  height: 3rem;
+  display: block;
+  max-height: 3rem;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -209,5 +211,9 @@ br {
     flex-wrap: wrap;
     gap: 0.2rem;
     justify-content: center;
+  }
+
+  .head3 img {
+    height: 2.2rem;
   }
 }
