@@ -20,13 +20,6 @@ body {
 }
 
 :root {
-  --cyan: hsl(179, 62%, 40%);
-  --lightcyan: hsl(179, 62%, 50%);
-  --yellow: hsl(71, 73%, 54%);
-  --lightgray: hsl(204, 43%, 93%);
-  --grayblue: hsl(218, 22%, 67%);
-  --paddingx: 1.875rem; /* 30px */
-  --paddingy: 1.5rem; /* 24px */
   --red: #ff0000;
   --button_radius: 0.75em;
   --button_color: #ffffff;
@@ -36,7 +29,7 @@ body {
   text-align: center;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: gray;
+  color: rgb(97, 95, 95);
 }
 .header sup {
   font-size: 0.6rem;
@@ -90,7 +83,7 @@ body {
 .section {
   border-radius: 0.5rem; /* 8px*/
   overflow: hidden;
-  max-width: 40rem;
+  max-width: 100vw;
   margin: auto;
   text-align: justify;
 }
@@ -98,33 +91,6 @@ body {
 .horizontal-line {
   margin: 1rem 0;
   border-bottom: 2px solid white;  
-}
-
-/* Desktop media query */
-@media only screen and (width >= 960px) {
-  html {
-    font-size: 16px;
-  }
-  /* 960px*/
-  .section {
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-  .community {
-    grid-column: 1 / 3;
-  }
-  .vertical-line {
-    height: 75%;
-    width: 0.5rem;
-    background: white;
-    margin: auto;
-  }
-  .information-1,
-  .information-2 {
-    padding: 1rem 4rem;
-  }
 }
 
 /* .section > * {
@@ -136,7 +102,7 @@ body {
   background: rgb(167, 164, 164);
   /* background-color: white; */
   color: white;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .community .subtitle {
@@ -193,4 +159,32 @@ body {
 .information-2 article {
   text-align: center;
   margin: 1rem;
+}
+
+/* Desktop media query */
+@media only screen and (width >= 960px) {
+  html {
+    font-size: 16px;
+  }
+  /* 960px*/
+  .section {
+    max-width: 990px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .community {
+    grid-column: 1 / 3;
+    padding: 2rem;
+  }
+  .vertical-line {
+    height: 75%;
+    width: 0.5rem;
+    background: white;
+    margin: auto;
+  }
+  .information-1,
+  .information-2 {
+    padding: 1rem 4rem;
+  }
 }
