@@ -80,14 +80,17 @@ body {
   /* background-position: center; */
   background-position: top center;
   background-size: cover;
-  /* background-blend-mode:multiply; */
+  /* background-blend-mode: screen; */
+  /* background-blend-mode: multiply;  */
+  background-color: red;
+  background-blend-mode: multiply;
 }
 
 
 .about-bg-img div {
   margin-top: 20px;
   width: 70vw;
-  background-color: #c01f24c8;
+  /* background-color: red; */
   padding: 15px 40px;
   text-align: justify;
   word-spacing: 1.6pt;
