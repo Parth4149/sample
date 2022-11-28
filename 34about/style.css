@@ -94,7 +94,7 @@ body {
   padding: 15px 40px;
   text-align: justify;
   word-spacing: 1.6pt;
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 .about-bg-img p {
@@ -132,7 +132,7 @@ body {
   .about-bg-img {
     max-height: 100%;
     max-width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .about-bg-img div {
