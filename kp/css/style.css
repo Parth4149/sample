@@ -53,6 +53,49 @@
   background-image: url(../img/homepage.jpg);
 }
 
+
+/* about */
+.about-header {
+  display: flex;
+  /* justify-content: center; */
+}
+.about-header img {
+  width: 70px;
+  height: 70px;
+}
+.column button {/*foundation*/
+  font-size: 14px;
+}
+
+@media screen and (width <= 640px) {
+  .about-header img {
+    width: 45px;
+    height: 45px;
+  }
+  .service-heading {
+    font-size: 16px;
+  }
+  .section-custom { /*foundation*/
+    padding: 10px;
+    margin: 0;
+  }
+  .column button { /*foundation*/
+    font-size: 10px;
+  }
+  .container.sections.section-custom {
+    padding: 10px;
+    margin: 0;
+  }
+  
+}
+
+.service-heading {
+  font-size: 30px;
+}
+
+
+
+
 /* reset */
 html,
 body,
@@ -150,6 +193,7 @@ body {
 
 body {
   line-height: 1;
+  font-family: "Overpass", sans-serif;
 }
 
 article,
