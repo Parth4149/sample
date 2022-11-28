@@ -1,5 +1,7 @@
 body {
     cursor: url("./img/fav.svg") auto;
+    font-family: "Overpass", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .background-primary {
@@ -147,12 +149,13 @@ body {
 }
 
 .about-bg-img {
+    text-align: center;
     background-image: url("/kp/img/about.png");
     background-size: 100% 100%;
-    padding: 15px;
+    padding: 0.9rem;
     background-repeat: no-repeat;
-    background-position: center;
-
+    /* background-position: center; */
+    background-position:center center;
 }
 
 @media (min-width: 720px) {
@@ -162,7 +165,7 @@ body {
     }
 
     .about-bg-img {
-        padding: 35px 120px;
+        padding: 2.1rem 7.5rem;
     }
 }
 
