@@ -1,3 +1,4 @@
+const time = document.querySelector("#time");
 
 function setDate() {
   const now = new Date();
@@ -18,7 +19,7 @@ function setDate() {
 }
 
 //? Using clearInterval() to stop the digital watch:
-function myStopFunction() {
+function myStopFunction(myInterval) {
   clearInterval(myInterval);
 }
 
@@ -28,11 +29,13 @@ const secondHand = document.querySelector(".second-hand");
 
 //? 1 second = 1000 milliseconds.
 inter = setInterval(setDate, 1000); // setDate function call every 1 second
-console.log(inter);
+
+// clearInterval(inter);
+
+// console.log(inter);
 //? Display "Hello" every second (1000 milliseconds):
 //* setInterval(function () {element.innerHTML += "Hello"}, 1000);
 
 //? Call displayHello every second:
 //* setInterval(displayHello, 1000);
 
-const time = document.querySelector("#time");
