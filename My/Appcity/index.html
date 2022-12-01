@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="home">
+    <!-- navbar  -->
+    <nav id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img class="logo" src="http://unsplash.it/400/400" alt="logo" >
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+            <li>
+              <a href="#services" class="scroll-link">services</a>
+            </li>
+            <li>
+              <a href="#tours" class="scroll-link">tours</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="nav-line"></div>
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="animated-text">
+          <h2>Digital Solutions for Your
+          </h2>
+          <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&vCenter=true&width=160&lines=Startup;SaaS;Business;Agency" alt="Typing SVG" />
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolorum aperiam exercitationem quia ullam
+          pariatur deleniti omnis maxime recusandae cum tempora, modi doloremque quisquam tempore voluptatem fugiat quaerat dolores voluptate.
+       </p>
+        <button class="explore-btn">
+          <a href="#tours" class="scroll-link "> explore tours </a>
+        </button>
+      </div>
+      <div class="home-image">
+        <img src="http://unsplash.it/800/600" alt="">
+      </div>
+    </div>
+  </header>
+
+  <!-- about -->
+  <section id="about" class="section">
+    <div class="title">
+      <h2> about <span>us</span></h2>
+    </div>
+  </section>
+  <!-- services -->
+  <section id="services" class="section">
+    <div class="title">
+      <h2> our <span>services</span></h2>
+    </div>
+  </section>
+  <!-- tours -->
+  <section id="tours" class="section">
+    <div class="title">
+      <h2> featured <span>tours</span></h2>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="section">
+    <p>
+      copyright &copy; backroads trave tours company <span id="date"></span>
+      .all rights reserved
+    </p>
+  </footer>
+
+  <!-- back to top button -->
+   <a href="#home" class="scroll-link top-link">
+    <i class="fas fa-arrow-up"></i>
+   </a>
+  <!-- javascript -->
+  <script src="app.js"></script>
+  
+</body>
+
+</html>
