@@ -74,3 +74,18 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   })
 })
+
+
+
+function updateHandle() {
+  this.classList.add("show-project");
+}
+function removeUpdate() {
+  this.classList.remove("show-project");
+}
+
+const projectDiv = document.querySelectorAll(".project-main");
+
+projectDiv.forEach(div => div.addEventListener("mouseover", updateHandle));
+projectDiv.forEach(div => div.addEventListener("mouseout", removeUpdate));
+
