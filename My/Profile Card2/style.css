@@ -187,7 +187,7 @@ svg {
   /* filter: brightness(10%); */
   /* filter: brightness(0); */
   filter: brightness(1.75);
-  fill: var(--clr-grey-6);
+  fill: var(--clr-grey-5);
   /* color: #4267b2; */
 }
 .social-icons .lnk svg:hover {
