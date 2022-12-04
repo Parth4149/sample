@@ -24,7 +24,7 @@ function checkSlide(e) {
   sliderImages.forEach(slideImage => {
     // half way through the image 
     // window.scrollY -> starting of the window
-    const slideInAt = (window.scrollY + window.innerHeight) - slideImage.height / 2;
+    const slideInAt = (window.scrollY + window.innerHeight) - slideImage.height / 4;
     // bottom of the image
     // .offsetTop -> top of the image is how far from the top of actual window
     const imageBottom = slideImage.offsetTop + slideImage.height;
@@ -32,9 +32,10 @@ function checkSlide(e) {
     const isNotScrolledPast = window.scrollY < imageBottom;
     if(isHalfShown && isNotScrolledPast) {
       slideImage.classList.add('active');
-    } else {
-      slideImage.classList.remove('active');
-    }
+    } 
+    // else {
+    //   slideImage.classList.remove('active');
+    // }
   });
 } 
 
