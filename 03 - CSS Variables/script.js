@@ -1,3 +1,7 @@
+// select all the input in class controls
+const inputs = document.querySelectorAll('.controls input');
+const width = document.getElementById('width');
+
 // The dataset read property of the HTMLElement interface provides read/write access to custom data attributes (data-*) on elements. 
 function handleUpdate() {
   // console.log(this.value);
@@ -9,9 +13,7 @@ function handleUpdate() {
   
   document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
 }
-// select all the input in class controls
-const inputs = document.querySelectorAll('.controls input');
-const width = document.getElementById('width');
+
 width.textContent = '400';
 console.log(width);
 inputs.forEach(input => input.addEventListener('change', handleUpdate)); //
