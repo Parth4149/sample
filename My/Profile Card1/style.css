@@ -34,13 +34,25 @@ a {
 }
 .wrapper {
   position: relative;
-  width: 350px;
-  padding: 30px;
+  width: 26rem;
+  padding: 1.8rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media screen and (width < 600px) {
+  .wrapper {
+    /* width: 20rem; */
+    margin: 0.8rem;
+  }
+}
+@media screen and (600px <= width <= 900px) {
+  .wrapper {
+    width: 24rem;
+  }
 }
 .wrapper .icon {
   font-size: 1rem;
