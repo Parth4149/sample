@@ -46,7 +46,7 @@ a {
 @media screen and (width < 600px) {
   .wrapper {
     /* width: 20rem; */
-    margin: 0.8rem;
+    margin: 1rem;
   }
 }
 @media screen and (600px <= width <= 900px) {
