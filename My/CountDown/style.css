@@ -58,12 +58,13 @@ body {
 
 body {
   align-items: center;
-  background: url(./pexels-mikhail-nilov-6526177.jpg);
-  background-color: #181c3d91;
+  background: #0000;
+  background: url(./68395474667ae256ef34e61799344f6b.gif), #000000;
+  /* background-color: #181c3d91; */
   /* background-size: cover; */
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
   background-repeat: no-repeat;
   display: flex;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -113,30 +114,54 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
+h2 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 1px rgba(131, 136, 175, 0.5);
+}
+h2 a:hover {
   text-decoration: underline;
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
-
+.container {
+  padding: 1rem;
+}
+.bottom-link {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  text-decoration: underline;
+}
 @media screen and (width < 768px) {
   .container {
-    margin-top: -20rem;
+    margin-top: -10rem;
   }
   #headline {
     font-size: 3.5rem;
   }
-
+  h2 {
+    margin-top: 0.6rem;
+    font-size: 2rem;
+    text-shadow: 1.5px 1.5px 1px rgba(131, 136, 175, 0.5);
+  }
   ul {
     gap: 1.8rem;
     justify-content: space-around;
   }
   li {
     font-size: calc(1.125rem * var(--smaller));
+    text-shadow: 1px 1px 1px rgba(131, 136, 175, 0.5);
   }
 
   li span {
     font-size: calc(3.375rem * var(--smaller));
     text-shadow: 2px 2px 1px rgba(131, 136, 175, 0.5);
+  }
+  .bottom-link {
+    font-size: 0.8rem;
+    bottom: 2rem;
+    right: 2rem;
   }
 }
