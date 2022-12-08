@@ -652,6 +652,8 @@ footer p {
   height: 5rem;
   width: 10rem;
   object-fit: cover;
+  box-shadow: -1px -1px 3px #ffffff20, 1px 1px 4px #bebdbd2a;
+
 }
 .project-main img {
   margin: auto;
@@ -660,13 +662,14 @@ footer p {
   height: 100%;
   object-fit: cover;
   /* height: auto; */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* margin-bottom: 0.5rem; */
 }
 .project-main img:last-child {
   object-fit: cover;
   object-position: top center;
 }
+
 .project-main h4 {
   margin-top: 0.5rem;
 }
@@ -691,6 +694,7 @@ footer p {
     height: 10rem;
     width: 20rem;
     object-fit: cover;
+    box-shadow: -3px -3px 4px #ffffff20, 3px 3px 6px #bebdbd2a;
   }
   .project-main img {
     width: 100%;
