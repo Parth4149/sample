@@ -7,13 +7,58 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Neon</title>
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="https://kit.fontawesome.com/53323cb170.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="has-animations">
+<body class="has-animations" id="body">
 	<div class="body-wrap">
-		<header class="site-header">
+		<!-- navbar  -->
+		<nav id="nav">
+			<div class="nav-center" id="home">
+			  <!-- nav header -->
+			  <div class="nav-header">
+				<a href="#home">
+				  <img class="logo" src="images/logo.svg" alt="logo" >
+				</a>
+				<!-- <button id="header-nav-toggle" class="header-nav-toggle nav-toggle" aria-controls="primary-menu"
+						aria-expanded="false">
+						<span class="screen-reader">Menu</span>
+						<span class="hamburger"><span class="hamburger-inner"></span></span>
+					</button> -->
+				<button class="nav-toggle">
+				  <i class="fas fa-bars"></i>
+				</button>
+			  </div>
+
+			  <!-- links -->
+			  <div class="links-container">
+				<ul class="links">
+				  <li>
+					<a href="#home" class="scroll-link">Home</a>
+				  </li>
+				  <li>
+					<a href="#about" class="scroll-link">About</a>
+				  </li>
+				  <li>
+					<a href="#service" class="scroll-link">Services</a>
+				  </li>
+				  <li>
+					<a href="#projects" class="scroll-link">Projects</a>
+				  </li>
+				  <li>
+					<a href="#team" class="scroll-link">Team</a>
+				  </li>
+				  <li>
+					<a href="#contact" class="scroll-link">Contact</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+
+		<!-- <header class="site-header">
 			<div class="container">
-				<div class="site-header-inner">
+				<div class="site-header-inner" id="home">
 					<div class="brand">
 						<h1 class="m-0">
 							<a href="index.html"><img src="images/logo.svg" alt="Neon" width="32" height="32" /></a>
@@ -25,20 +70,20 @@
 						<span class="hamburger"><span class="hamburger-inner"></span></span>
 					</button>
 					<nav id="header-nav" class="header-nav">
-						<div class="header-nav-inner">
+						<div class="header-nav-inner links-container">
 							<ul class="list-reset text-xxs header-nav-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#">Team</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="#home" class="scroll-link">Home</a></li>
+								<li><a href="#about" class="scroll-link">About</a></li>
+								<li><a href="#service" class="scroll-link">Service</a></li>
+								<li><a href="#projects" class="scroll-link">Projects</a></li>
+								<li><a href="#team" class="scroll-link">Team</a></li>
+								<li><a href="#" class="scroll-link">Contact</a></li>
 							</ul>
 						</div>
 					</nav>
 				</div>
 			</div>
-		</header>
+		</header> -->
 
 		<section>
 			<section class="features-split section">
@@ -61,7 +106,7 @@
 							</div>
 							<div class="split-item-content split-item-image-fill reveal-from-right"
 								data-reveal-container=".split-item">
-								<img src="./images/Consent-amico.png" alt="Features split image 02" width="528"
+								<img class="hero-media-image" src="./images/Consent-amico.png" alt="Features split image 02" width="528"
 									height="396" />
 							</div>
 						</div>
@@ -354,242 +399,6 @@
 				</div>
 			</section>
 
-			<section class="features-split section">
-				<div class="container">
-					<div class="features-split-inner section-inner has-top-divider">
-						<div class="section-header center-content">
-							<div class="container-xs">
-								<h2 class="mt-0 mb-16">
-									Features - Lorem ipsum is placeholder
-									text.
-								</h2>
-								<p class="m-0">
-									Duis aute irure dolor in reprehenderit
-									in voluptate velit esse cillum dolore eu
-									fugiat nulla pariatur excepteur sint —
-									occaecat cupidatat non proident, sunt in
-									culpa qui.
-								</p>
-							</div>
-						</div>
-						<div class="split-wrap invert-mobile">
-							<div class="split-item">
-								<div class="split-item-content center-content-mobile reveal-from-right"
-									data-reveal-container=".split-item">
-									<h3 class="mt-0 mb-12">
-										Data-driven insights
-									</h3>
-									<p class="m-0">
-										Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore
-										et dolore magna aliqua — Ut enim ad
-										minim veniam, quis nostrud
-										exercitation ullamco laboris nisi ut
-										aliquip ex ea commodo consequat.
-									</p>
-								</div>
-								<div class="split-item-image split-item-image-fill reveal-from-left"
-									data-reveal-container=".split-item">
-									<img src="images/features-split-image-01.svg" alt="Features split image 01"
-										width="528" height="396" />
-								</div>
-							</div>
-							<div class="split-item">
-								<div class="split-item-content center-content-mobile reveal-from-left"
-									data-reveal-container=".split-item">
-									<h3 class="mt-0 mb-12">
-										Data-driven insights
-									</h3>
-									<p class="m-0">
-										Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore
-										et dolore magna aliqua — Ut enim ad
-										minim veniam, quis nostrud
-										exercitation ullamco laboris nisi ut
-										aliquip ex ea commodo consequat.
-									</p>
-								</div>
-								<div class="split-item-image split-item-image-fill reveal-from-right"
-									data-reveal-container=".split-item">
-									<img src="images/features-split-image-02.svg" alt="Features split image 02"
-										width="528" height="396" />
-								</div>
-							</div>
-							<div class="split-item">
-								<div class="split-item-content center-content-mobile reveal-from-right"
-									data-reveal-container=".split-item">
-									<h3 class="mt-0 mb-12">
-										Data-driven insights
-									</h3>
-									<p class="m-0">
-										Lorem ipsum dolor sit amet,
-										consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore
-										et dolore magna aliqua — Ut enim ad
-										minim veniam, quis nostrud
-										exercitation ullamco laboris nisi ut
-										aliquip ex ea commodo consequat.
-									</p>
-								</div>
-								<div class="split-item-image split-item-image-fill reveal-from-left"
-									data-reveal-container=".split-item">
-									<img src="images/features-split-image-01.svg" alt="Features split image 03"
-										width="528" height="396" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="section">
-				<div class="container">
-					<div class="section-inner has-top-divider">
-						<div class="container-xs">
-							<h2 class="mt-0">
-								Lorem ipsum is placeholder text commonly
-								used in the graphic.
-							</h2>
-							<p>
-								Lorem ipsum dolor sit amet,
-								<a href="#">consectetur adipiscing elit</a>,
-								sed do eiusmod tempor incididunt ut labore
-								et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco
-								laboris nisi ut aliquip ex ea commodo
-								consequat.
-							</p>
-							<p>
-								Duis aute irure dolor in reprehenderit in
-								voluptate velit esse cillum dolore eu fugiat
-								nulla pariatur. Excepteur sint occaecat
-								cupidatat non proident, sunt in culpa qui
-								officia deserunt mollit anim id est laborum.
-							</p>
-							<figure>
-								<img class="image-larger" src="images/image-placeholder.svg" alt="Image placeholder"
-									width="712" height="400" />
-								<figcaption class="text-color-low">
-									A super-nice image
-									<span role="img" aria-label="smile">😀</span>
-								</figcaption>
-							</figure>
-							<h4>Flexibility</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.
-								Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip
-								ex ea commodo consequat sint occaecat
-								cupidatat non proident, sunt in culpa qui
-								officia deserunt mollit anim id est laborum.
-							</p>
-							<ul>
-								<li>
-									Lorem ipsum dolor sit amet, consectetur.
-								</li>
-								<li>
-									Lorem ipsum dolor sit amet, consectetur.
-								</li>
-								<li>
-									Lorem ipsum dolor sit amet, consectetur.
-								</li>
-							</ul>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.
-								Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="roadmap section">
-				<div class="container">
-					<div class="roadmap-inner section-inner has-top-divider">
-						<div class="section-header center-content">
-							<div class="container-xs">
-								<h2 class="mt-0 mb-16">Product roadmap</h2>
-								<p class="mb-0">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna
-									aliqua.
-								</p>
-							</div>
-						</div>
-						<div class="timeline">
-							<div class="timeline-wrap">
-								<div class="timeline-item">
-									<div class="timeline-item-inner">
-										<div class="timeline-item-header tt-u mb-4 reveal-fade">
-											November 2019
-										</div>
-										<div class="timeline-item-content h4 m-0 reveal-from-side">
-											Deployed a high-quality first
-											release and conducted a market
-											validation test
-										</div>
-									</div>
-								</div>
-								<div class="timeline-item">
-									<div class="timeline-item-inner">
-										<div class="timeline-item-header tt-u mb-4 reveal-fade">
-											December 2019
-										</div>
-										<div class="timeline-item-content h4 m-0 reveal-from-side">
-											Deployed a high-quality first
-											release and conducted a market
-											validation test
-										</div>
-									</div>
-								</div>
-								<div class="timeline-item">
-									<div class="timeline-item-inner">
-										<div class="timeline-item-header tt-u mb-4 reveal-fade">
-											January 2020
-										</div>
-										<div class="timeline-item-content h4 m-0 reveal-from-side">
-											Deployed a high-quality first
-											release and conducted a market
-											validation test
-										</div>
-									</div>
-								</div>
-								<div class="timeline-item">
-									<div class="timeline-item-inner">
-										<div class="timeline-item-header tt-u mb-4 reveal-fade">
-											February 2019
-										</div>
-										<div class="timeline-item-content h4 m-0 reveal-from-side">
-											Deployed a high-quality first
-											release and conducted a market
-											validation test
-										</div>
-									</div>
-								</div>
-								<div class="timeline-item">
-									<div class="timeline-item-inner">
-										<div class="timeline-item-header tt-u mb-4 reveal-fade">
-											March 2020
-										</div>
-										<div class="timeline-item-content h4 m-0 reveal-from-side">
-											Deployed a high-quality first
-											release and conducted a market
-											validation test
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<!-- <section class="cta section center-content-mobile reveal-from-bottom">
 				<div class="container">
@@ -717,8 +526,13 @@
 				</div>
 			</div>
 		</footer>
+		<!-- back to top button -->
+		<a href="#home" class="scroll-link top-link">
+			<i class="fas fa-arrow-up"></i>
+		</a>
 	</div>
 	<script src="js/main.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -281,9 +281,9 @@ nav {
     backdrop-filter: blur(7px);
     background-color: #151118c3;
   }
-  .fixed-nav {
+  /* .fixed-nav {
     border-bottom: 0.1px solid rgba(54, 147, 247, 0.496);
-  }
+  } */
 }
 /* fixed nav */
 .fixed-nav {
@@ -296,16 +296,14 @@ nav {
   box-shadow: var(--light-shadow);
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
-  background-color: #151118c3;
+  background-color: #1b1c21c8;
   /* background-color: #2b2a33cb; */
   /* background-color: rgba(255, 255, 255, 0.284); */
 }
 .fixed-nav .links a {
   color: var(--clr-white);
 }
-/* .fixed-nav .links a:hover {
 
-} */
 /* .fixed-nav .links-container {
   height: auto !important;
 } */
@@ -360,9 +358,6 @@ nav {
   /* width >= 800px */
   nav {
     background: transparent;
-  }
-  .section {
-    margin-bottom: 8rem;
   }
   .nav-center {
     width: 90vw;

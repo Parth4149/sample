@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:600|Heebo:400,500,700&display=swap");
+
+/*
+	Disable smooth scrolling when users have prefers-reduced-motion enabled
+   */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 html {
+	scroll-behavior: smooth;
+	/* scroll-margin-top: 20rem; */
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -2010,9 +2021,171 @@ textarea.form-input {
 	position: fixed !important;
 	background: #1b1c21c8;
 	-webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
 	/* height: auto; */
 }
+#nav {
+	/* background: var(--clr-white); */
+	background: #1b1c21c8;
+	z-index: 10;
+}
+@media screen and (max-width: 800px) {
+	#nav {
+		pad: 0;
+		box-shadow: var(--light-shadow);
+		-webkit-backdrop-filter: blur(7px);
+		backdrop-filter: blur(7px);
+		background-color: #1b1c21c8;
+	}
+	#nav-header {
+		padding: 0.3rem 0.8rem;
+	}
+
+	.links {
+		background: #292b32b1;
+		padding-bottom: 8px;
+		/* -webkit-backdrop-filter: blur(7px);
+		backdrop-filter: blur(7px); */
+	}
+	.links-container {
+		width: 100%;
+		height: auto;
+	}
+}
+/* fixed nav */
+.fixed-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.1);
+	-webkit-backdrop-filter: blur(7px);
+	backdrop-filter: blur(7px);
+	background-color: #1b1c21c8;
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 16px;
+}
+.nav-toggle {
+	font-size: 22px;
+	color: hsl(209, 20%, 74%);
+	background: transparent;
+	border-color: transparent;
+	transition: all 0.3s linear;
+	/* -webkit-transition: all ease 0.5s; */
+	/* -moz-transition: all ease 0.5s; */
+	/* transition: all ease 0.5s; */
+	cursor: pointer;
+}
+.nav-toggle:hover {
+	color: hsl(210, 31%, 80%);
+}
+.logo {
+	height: 26px;
+}
+.links {
+	margin-bottom: 0;
+}
+.links li {
+	list-style: none;
+	margin-bottom: 0;
+}
+.links li a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	text-transform: capitalize;
+	display: block;
+	transition: all 0.3s linear;
+}
+
+.links-container {
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s linear;
+}
+.show-links {
+	height: auto;
+}
+.top-link {
+	font-size: 1rem;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	/* background: #6991fa; */
+	width: 1.5rem;
+	height: 1.5rem;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	color: #6991fa;
+	visibility: hidden;
+	z-index: -100;
+}
+.show-link {
+	visibility: visible;
+	z-index: 100;
+}
+
+@media screen and (min-width: 800px) {
+	#nav {
+		padding: 18px 24px;
+	}
+	/* width >= 800px */
+	.nav-center {
+		width: 90vw;
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.nav-header {
+		padding: 0;
+	}
+	.nav-toggle {
+		display: none;
+	}
+	.links-container {
+		height: auto !important;
+	}
+	.links {
+		display: flex;
+	}
+
+	.links li:hover {
+		background: #75777923;
+	}
+	.links a {
+		background: transparent;
+		color: hsl(210, 31%, 80%);
+		font-size: 14px;
+		text-transform: capitalize;
+		display: block;
+		transition: all 0.3s linear;
+		margin: 0 1rem;
+		padding: 0;
+	}
+	.top-link {
+		bottom: 48px;
+		right: 40px	;
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.25rem;
+	}
+}
+
+#home {
+	height: auto;
+}
+.container h1 {
+	color: #fff;
+	text-transform: uppercase;
+}
+
 .site-header + .site-content .section:first-of-type {
 	padding-top: 80px;
 }
@@ -2037,6 +2210,9 @@ textarea.form-input {
 	display: flex;
 	-webkit-box-flex: 1;
 	flex-grow: 1;
+}
+.header-nav .header-nav-inner li a {
+	transition: all 0.3s linear;
 }
 .header-nav ul {
 	display: -webkit-box;
@@ -2804,12 +2980,14 @@ ul.pricing-item-features-list li {
 	object-position: top center;
 }
 .features-tiles-color {
-	background: -webkit-linear-gradient(bottom,#376ef982 0%,
-	#ff79af 50%,
-	#ff8d74 100%);
+	background: -webkit-linear-gradient(
+		bottom,
+		#376ef982 0%,
+		#ff79af 50%,
+		#ff8d74 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-
 }
 .features-tiles-item-image {
 	display: -webkit-inline-box;
@@ -2825,6 +3003,7 @@ ul.pricing-item-features-list li {
 .text-color-calm {
 	color: #6991fa;
 }
+
 .pricing .tiles-item-inner {
 	background: #292b32;
 }
