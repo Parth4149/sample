@@ -2072,7 +2072,6 @@ textarea.form-input {
 }
 .nav-toggle {
 	font-size: 22px;
-	color: hsl(209, 20%, 74%);
 	background: transparent;
 	border-color: transparent;
 	transition: all 0.3s linear;
@@ -2081,8 +2080,11 @@ textarea.form-input {
 	/* transition: all ease 0.5s; */
 	cursor: pointer;
 }
+.nav-toggle svg {
+	fill: hsl(209, 20%, 74%);
+}
 .nav-toggle:hover {
-	color: hsl(210, 31%, 80%);
+	fill: hsl(209, 46%, 87%);
 }
 .logo {
 	height: 26px;
@@ -2179,6 +2181,24 @@ textarea.form-input {
 		font-size: 1.25rem;
 	}
 }
+
+
+#form input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	/* border: 1px solid #ccc; */
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	resize: vertical;
+  }
+  #form input, textarea {
+	height: 36px;
+	background: #6a6f823d;
+	border: 1px solid #6991fa;
+	color: #f9faff;
+  }
 
 #home {
 	height: auto;
@@ -2985,7 +3005,6 @@ ul.pricing-item-features-list li {
 	height: 180px;
 }
 .team-photo img {
-	margin-top: 18px;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;

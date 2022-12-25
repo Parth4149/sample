@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Neon Template</title>
+	<title>form</title>
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -35,36 +35,31 @@
 						<div class="tiles-wrap">
 							<div class="tiles-item">
 								<div class="tiles-item-inner">
-									<form>
+									<form id="form">
 										<fieldset>
-											<div class="mb-12">
-												<label class="form-label screen-reader" for="name">Full name</label>
-												<input id="name" class="form-input" type="name" placeholder="Full name"
-													required />
+											<div class="mb-12" mb-32>
+												<label class="form-label" for="name">Name</label>
+												<input id="name" class="form-input" type="text" placeholder="Full name" />
 											</div>
-											<div class="mb-12">
-												<label class="form-label screen-reader" for="email">Email</label>
-												<input id="email" class="form-input" type="email" placeholder="Email"
-													required />
+											<div class="mb-12" mb-32>
+												<label class="form-label" for="email">Email</label>
+												<input id="email" class="form-input" type="email" placeholder="Email" />
 											</div>
-											<div class="mb-12">
-												<label class="form-label screen-reader" for="password">Password</label>
-												<input id="password" class="form-input" type="password"
-													placeholder="Password" required />
+											<div class="mb-12 mb-32" >
+												<label class="form-label" for="phone">Contact Number</label>
+												<input id="phone" class="form-input" type="tel" placeholder="Contact Number" />
+											</div>
+											<div class="mb-12 mb-32">
+												<label class="form-label" for="subject">Subject</label>
+    											<textarea id="subject" name="subject" placeholder="Your Message.." style="height:100px; font-size: 16px;"></textarea>
 											</div>
 											<div class="mt-24 mb-32">
-												<button class="button button-primary button-block">
-													Sign up
+												<button class="button button-primary button-block" type="submit">
+													Submit
 												</button>
 											</div>
 										</fieldset>
 									</form>
-									<div class="signin-bottom has-top-divider">
-										<div class="pt-32 text-xs center-content text-color-low">
-											Already have an account?
-											<a class="func-link" href="login.html">Login</a>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
