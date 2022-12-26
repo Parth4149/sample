@@ -2934,6 +2934,7 @@ ul.pricing-item-features-list li {
 [class*="illustration-section-"]::after {
 	z-index: -2;
 }
+
 .illustration-section-01::after {
 	content: "";
 	position: absolute;
@@ -2949,6 +2950,7 @@ ul.pricing-item-features-list li {
 	-webkit-transform: translate(-50%);
 	transform: translate(-50%);
 }
+
 .illustration-section-02::after {
 	content: "";
 	position: absolute;
@@ -2963,6 +2965,189 @@ ul.pricing-item-features-list li {
 	background-position: center top;
 	-webkit-transform: translate(-50%);
 	transform: translate(-50%);
+}
+.illustration-section-04::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	height: 670px;
+	background-image: url(../images/illustration-section-04.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	left: 50%;
+	bottom: 60px;
+	background-position: center bottom;
+	transform: translate(-50%);
+}
+.illustration-section-05::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	height: 680px;
+	background-image: url(../images/illustration-section-05.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	left: 50%;
+	top: 0;
+	background-position: center top;
+	transform: translate(-50%);
+}
+.illustration-section-06::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	height: 765px;
+	background-image: url(../images/illustration-section-06.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	left: 50%;
+	top: 0;
+	background-position: center top;
+	transform: translate(-50%);
+}
+.illustration-section-08::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 840px;
+	background-image: url(../images/illustration-section-08.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	left: 50%;
+	background-position: center;
+	top: calc(50% + 15px);
+	transform: translate(-50%, -50%);
+}
+
+.illustration-element-01::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-01.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-02::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-02.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-03::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-03.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-04::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-04.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-05::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-05.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-06::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-06.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-07::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-07.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-08::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-08.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.illustration-element-09::after {
+	content: "";
+	position: absolute;
+	width: 200%;
+	max-width: 200%;
+	height: 200%;
+	background-image: url(../images/illustration-element-09.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 50%;
+	background-position: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 @media (min-width: 641px) {
 	.has-animations
@@ -3009,6 +3194,7 @@ ul.pricing-item-features-list li {
 	height: 100%;
 	object-fit: cover;
 	object-position: top center;
+	border-radius: 50%;
 }
 
 .features-tiles-color {
@@ -3108,7 +3294,9 @@ ul.pricing-item-features-list li.is-checked::after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill-rule%3D%22nonzero%22%20fill%3D%22none%22%3E%3Ccircle%20fill%3D%22%231EC198%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cpath%20fill%3D%22%23292B32%22%20d%3D%22M10.5%2012.267l-2.5-1.6-1%201.066L10.5%2016%2017%209.067%2016%208z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 .testimonial .tiles-item-inner {
-	background: #292b32;
+	background: #292b32d5;
+	-webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
 }
 .testimonial-item-content {
 	position: relative;
