@@ -476,19 +476,19 @@
 					<div class="tiles-wrap">
 						<div class="tiles-item">
 							<div class="tiles-item-inner">
-								<form id="form" action="mailto:ppparth4149@gmail.com" enctype="text/plain" onsubmit="location.href='thanks.html';">
+								<form id="form" action="mailto:ppparth4149@gmail.com" method="post" enctype="multipart/form-data" onsubmit="location.href='thanks.html'">
 									<fieldset>
 										<div class="mb-12" mb-32>
 											<label class="form-label" for="name">Name</label>
-											<input id="name" class="form-input" type="text" placeholder="Full name" />
+											<input id="name" class="form-input" name="name" type="text" placeholder="Full name" />
 										</div>
 										<div class="mb-12" mb-32>
 											<label class="form-label" for="email">Email</label>
-											<input id="email" class="form-input" type="email" placeholder="Email" />
+											<input id="email" class="form-input" name="email" type="email" placeholder="Email" required/>
 										</div>
 										<div class="mb-12 mb-32" >
 											<label class="form-label" for="phone">Contact Number</label>
-											<input id="phone" class="form-input" type="tel" placeholder="Contact Number" />
+											<input id="phone" class="form-input" name="number" type="tel" placeholder="Contact Number" />
 										</div>
 										<div class="mb-12 mb-32">
 											<label class="form-label" for="subject">Subject</label>
@@ -507,7 +507,6 @@
 				</div>
 			</div>
 		</section>
-
 
 
 		<footer class="site-footer">
