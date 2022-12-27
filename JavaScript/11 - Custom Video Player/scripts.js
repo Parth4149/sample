@@ -5,20 +5,14 @@ const progress = player.querySelector(".progress");
 const progressBar = player.querySelector(".progress__filled");
 const toggle = player.querySelector(".toggle");
 const skipButtons = player.querySelectorAll("[data-skip]");
-const ranges = player.querySelectorAll(".player__slider"); // 
+const ranges = player.querySelectorAll(".player__slider"); //
 const fullScreen = player.querySelector(".full-screen");
 
 const volume = player.querySelector("#volume");
 const playbackSpeed = player.querySelector("#speed");
 
-
 // Build out function
 function togglePlay() {
-  // if(video.paused) {
-  //     video.play();
-  // } else {
-  //     video.pause();
-  // }
   const method = video.paused ? "play" : "pause";
   video[method]();
 }
@@ -36,7 +30,7 @@ function skip() {
   // convert into number
   video.currentTime += parseFloat(this.dataset.skip);
   // console.log(video.currentTime);
-  console.log(video.duration); 
+  console.log(video.duration);
 }
 
 function handleRangeUpdate() {
@@ -61,9 +55,10 @@ function scrub(e) {
 function openFullscreen() {
   if (!document.fullscreenElement) {
     video.requestFullscreen();
-  } else if (video.webkitRequestFullscreen) { /* Safari */
+  } else if (video.webkitRequestFullscreen) {
+    /* Safari */
     video.webkitRequestFullscreen();
-  } 
+  }
 }
 
 /* Close fullscreen */
@@ -75,9 +70,10 @@ function closeFullscreen() {
   // }
   if (document.exitFullscreen) {
     document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
+  } else if (document.webkitExitFullscreen) {
+    /* Safari */
     document.webkitExitFullscreen();
-  } 
+  }
 }
 
 // function toggleFullscreen() {
@@ -92,9 +88,8 @@ function closeFullscreen() {
 //   }
 // }
 
-
 function isVideoInFullscreen() {
-  if (document.fullscreenElement?.nodeName === 'VIDEO') {
+  if (document.fullscreenElement?.nodeName === "VIDEO") {
     closeFullscreen();
     console.log("this is true");
     return true;
@@ -107,67 +102,66 @@ function isVideoInFullscreen() {
 function keyboardHandle(e) {
   console.log(e.key);
   if (!handleKeyboard[e.key]) {
-    return; 
+    return;
   }
   handleKeyboard[e.key]();
 }
-// Object 
+// Object
 const handleKeyboard = {
-  ' ': togglePlay,
+  " ": togglePlay,
   f: isVideoInFullscreen,
   // 'ArrowRight': skipButtons.forEach((btn) => btn.addEventListener('click', skip)),
-  ArrowRight:  () => video.currentTime += parseFloat(25),
-  ArrowLeft: () =>  video.currentTime += parseFloat(-10),
-  ArrowUp: () =>{
-    video['volume'] += 0.1;
-    volume.value = video['volume']; 
+  ArrowRight: () => (video.currentTime += parseFloat(25)),
+  ArrowLeft: () => (video.currentTime += parseFloat(-10)),
+  ArrowUp: () => {
+    video["volume"] += 0.1;
+    volume.value = video["volume"];
   },
-  'ArrowDown': () => {
-    video['volume'] -= 0.1;
-    volume.value = video['volume']; 
+  ArrowDown: () => {
+    video["volume"] -= 0.1;
+    volume.value = video["volume"];
   },
-  '+': () => {
-    video['playbackRate'] += 0.1;
-    playbackSpeed.value = video['playbackRate'];
+  "+": () => {
+    video["playbackRate"] += 0.1;
+    playbackSpeed.value = video["playbackRate"];
   },
-  '-': () => {
-    video['playbackRate'] -= 0.1;
-    playbackSpeed.value = video['playbackRate'];
+  "-": () => {
+    video["playbackRate"] -= 0.1;
+    playbackSpeed.value = video["playbackRate"];
   },
-}
+};
 
-video.addEventListener('dblclick', isVideoInFullscreen);
+video.addEventListener("dblclick", isVideoInFullscreen);
 // Hook up the  event listeners
 // video.addEventListener('click', togglePlay);
 // This function will call when video starts
-video.addEventListener('play', updateButton);
-video.addEventListener('timeupdate', handleProgress);
+video.addEventListener("play", updateButton);
+video.addEventListener("timeupdate", handleProgress);
 // This function will call when video pauses
-video.addEventListener('pause', updateButton);
+video.addEventListener("pause", updateButton);
 
+toggle.addEventListener("click", togglePlay);
 
-toggle.addEventListener('click', togglePlay);
+skipButtons.forEach((btn) => btn.addEventListener("click", skip));
 
-skipButtons.forEach((btn) => btn.addEventListener('click', skip));
-
-ranges.forEach((range) => range.addEventListener('change', handleRangeUpdate));
-ranges.forEach((range) => range.addEventListener('mousemove', handleRangeUpdate));
+ranges.forEach((range) => range.addEventListener("change", handleRangeUpdate));
+ranges.forEach((range) =>
+  range.addEventListener("mousemove", handleRangeUpdate)
+);
 
 let mousedown = false;
-progress.addEventListener('click', scrub);
-progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+progress.addEventListener("click", scrub);
+progress.addEventListener("mousemove", (e) => mousedown && scrub(e));
 // progress.addEventListener('mousemove', (e) => {
 //   if(mousedown) {
 //     scrub(e);
 //   }
 // });
-progress.addEventListener('mousedown', () => mousedown = true);
-progress.addEventListener('mouseup', () => mousedown = false);
+progress.addEventListener("mousedown", () => (mousedown = true));
+progress.addEventListener("mouseup", () => (mousedown = false));
 
-fullScreen.addEventListener('click', isVideoInFullscreen);
+fullScreen.addEventListener("click", isVideoInFullscreen);
 // fullScreen.addEventListener('fullscreenchange', openFullscreen);
 // console.log(this.innerWidth);
 
-
-window.addEventListener('keydown', keyboardHandle);
-
+window.addEventListener("keydown", keyboardHandle);
