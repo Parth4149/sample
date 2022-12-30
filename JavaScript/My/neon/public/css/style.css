@@ -200,7 +200,7 @@ template {
 [hidden] {
 	display: none;
 }
-@media (min-width: 641px) {
+/* @media (min-width: 641px) { */
 	.has-animations [class*="reveal-"] {
 		opacity: 0;
 		will-change: opacity, transform;
@@ -253,7 +253,7 @@ template {
 		-webkit-transform: translate(0);
 		transform: translate(0);
 	}
-}
+/* } */
 html {
 	box-sizing: border-box;
 }
@@ -2025,18 +2025,19 @@ textarea.form-input {
 	/* height: auto; */
 }
 #nav {
-	/* background: var(--clr-white); */
-	background: #1b1c21c8;
+	/* background: #1b1c21c8; */
+	background: #272930c8;
 	z-index: 10;
 	-webkit-backdrop-filter: blur(6px);
 	backdrop-filter: blur(6px);
+	box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.4);
 }
 @media screen and (max-width: 800px) {
 	#nav {
 		pad: 0;
 		box-shadow: var(--light-shadow);
-		-webkit-backdrop-filter: blur(7px);
-		backdrop-filter: blur(7px);
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
 		background-color: #1b1c21c8;
 	}
 	#nav-header {
@@ -2044,10 +2045,14 @@ textarea.form-input {
 	}
 
 	.links {
-		background: #292b32b1;
+		/* background: #292b32b1; */
+		background: #353841b1;
 		padding-bottom: 8px;
-		/* -webkit-backdrop-filter: blur(7px);
-		backdrop-filter: blur(7px); */
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
+	}
+	.links li {
+		padding: 6px 0;
 	}
 	.links-container {
 		width: 100%;
@@ -2796,13 +2801,14 @@ ul.pricing-item-features-list li {
 	padding: 16px;
 }
 #projects .tiles-item-inner {
-	padding-top: 0;
+	padding-top: 14px;
 	padding-bottom: 0;
 	padding-left: 0;
 	padding-right: 0;
-	background: #1c1d22;
+	background: #24252c;
 }
 #projects .tiles-item-inner:hover {
+	background: #383f50;
 	box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
 }
 #team .tiles-item-inner img {
@@ -3399,7 +3405,7 @@ ul.pricing-item-features-list li.is-checked::after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill-rule%3D%22nonzero%22%20fill%3D%22none%22%3E%3Ccircle%20fill%3D%22%231EC198%22%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2212%22%2F%3E%3Cpath%20fill%3D%22%23292B32%22%20d%3D%22M10.5%2012.267l-2.5-1.6-1%201.066L10.5%2016%2017%209.067%2016%208z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 .testimonial .tiles-item-inner {
-	background: #3a3d4683;
+	background: #3a3d469a;
 	-webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
 }
