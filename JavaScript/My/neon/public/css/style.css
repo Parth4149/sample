@@ -2046,7 +2046,7 @@ textarea.form-input {
 
 	.links {
 		/* background: #292b32b1; */
-		background: #353841b1;
+		background: #3538419f;
 		padding-bottom: 8px;
 		-webkit-backdrop-filter: blur(6px);
 		backdrop-filter: blur(6px);
@@ -2086,6 +2086,9 @@ textarea.form-input {
 	/* -moz-transition: all ease 0.5s; */
 	/* transition: all ease 0.5s; */
 	cursor: pointer;
+}
+.nav-toggle-rotate {
+	transform: rotate(90deg);
 }
 code {
 	color: #ff5fa0;
