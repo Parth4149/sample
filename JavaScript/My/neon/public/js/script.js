@@ -53,7 +53,9 @@ scrollLinks.forEach((link) => {
 
     let position = element.offsetTop - navHeight + 20;
 
-    navToggle.classList.toggle("nav-toggle-rotate");
+    // if (containerHeight === 0) {
+      navToggle.classList.remove("nav-toggle-rotate");
+    // }
 
     if (!fixedNav) {
       // home page
