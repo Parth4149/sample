@@ -2039,6 +2039,7 @@ textarea.form-input {
 		-webkit-backdrop-filter: blur(6px);
 		backdrop-filter: blur(6px);
 		background-color: #1b1c21c8;
+		box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.4);
 	}
 	#nav-header {
 		padding: 0.3rem 0.8rem;
