@@ -2,10 +2,6 @@
 // const arr = ['git','github','html','css','js','react','firebase'];
 // console.log( arr.slice(-2) );
 
-// start with strings, numbers and booleans
-let str = "Parth";
-console.log(str.charAt(2));
-console.log(str[2]);
 // Let's say we have an array
 const players = ['Nirav', 'Jeet', 'Yogesh', 'Hardik'];
 
@@ -77,6 +73,8 @@ const parth = {
 }
 
 const dev = Object.assign({}, parth);
+const res = structuredClone(parth); // ✅[OR]
+console.log(res);
 //? dev.social.linkedin = "Parth"; //? dev refer to social obj of parth
 //? console.log(parth); 
 /*{
@@ -91,8 +89,3 @@ const dev = Object.assign({}, parth);
   age: 20,
   social: { twitter: '@parth4149', linkedin: 'Parth', instagram: 'parth_7788' }
 } */
-// JSON.stringify : Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
-const dev2 = JSON.parse(JSON.stringify(parth));
-dev2.social.linkedin = "Parth";
-console.log(dev2);
-console.log(parth);
