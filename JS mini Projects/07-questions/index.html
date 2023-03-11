@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q & A</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="questions">
+
+      <!-- title -->
+      <div class="title">
+        <h2>general questions</h2>
+      </div>
+      <!-- questions -->
+      <div class="section-center">
+        <!-- single question -->
+        <article class="question">
+          <!-- question title -->
+          <div class="question-title">
+            <p>Are linked lists of linear or non-linear type?</p>
+            <button class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <!-- question answer -->
+          <div class="question-ans">
+            <p>Linked lists can be considered both linear and non-linear data structures. This depends upon the 
+              application that they are used for.
+              <span>When linked list is used for access strategies, it is considered as a linear data-structure. When they are 
+                used for data storage, it can be considered as a non-linear data structure.</span>  
+            </p>
+          </div>
+        </article>
+
+        <article class="question">
+          <!-- question title -->
+          <div class="question-title">
+            <p> How are linked lists more efficient than arrays?</p>
+            <button class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <!-- question answer -->
+          <div class="question-ans">
+            <p>
+              <p>
+                Insertion and Deletion:
+                Insertion and deletion process is expensive in an array as the room has to be created for the new 
+                elements and existing elements must be shifted.
+                But in a linked list, the same operation is an easier process, as we only update the address present in the 
+                next pointer of a node.
+              </p>
+              <p>
+                Dynamic Data Structure:
+                Linked list is a dynamic data structure that means there is no need to give an initial size at the time of 
+                creation as it can grow and shrink at runtime by allocating and deallocating memory.
+                Whereas, the size of an array is limited as the number of items is statically stored in the main memory.
+                No wastage of memory
+              </p>
+              <p>
+                As the size of a linked list can grow or shrink based on the needs of the program, there is no memory 
+                wasted because it is allocated in runtime.
+                In arrays, if we declare an array of size 10 and store only 3 elements in it, then the space for 3 elements 
+                is wasted. Hence, chances of memory wastage is more in arrays
+              </p>
+            </p>
+          </div>
+        </article>
+
+        
+        <article class="question">
+          <!-- question title -->
+          <div class="question-title">
+            <p>Explain the scenarios where you can use linked lists and arrays.</p>
+            <button class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <div class="question-ans">
+            <p>Following are the scenarios where we use linked list over array:<br>
+              When we do not know the exact number of elements beforehand.<br>
+              When we know that there would be large number of add or remove operations.<br>
+              Less number of random access operations.<br>
+              When we want to insert items anywhere in the middle of the list, such as when implementing a priority <br>
+              queue, linked list is more suitable.<br>
+              Below are the cases where we use arrays over the linked list:<br>
+              When we need to index or randomly access elements more frequently.<br>
+              When we know the number of elements in the array beforehand in order to allocate the right amount of 
+              memory.<br>
+              When we need speed while iterating over the elements in the sequence.<br><br>
+              When memory is a concern:<br>
+              Due to the nature of arrays and linked list, it is safe to say that filled arrays use less memory than linked 
+              lists.<br>
+              Each element in the array indicates just the data whereas each linked list node represents the data as <br>
+              well as one or more pointers or references to the other elements in the linked list.<br>
+              To summarize, requirements of space, time, and ease of implementation are considered while deciding 
+              which data structure has to be used over what.              
+            </p>
+          </div>
+        </article>
+
+
+        <article class="question">
+          <div class="question-title">
+            <p>What is a doubly-linked list (DLL)? What are its applications.</p>
+            <button class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <div class="question-ans">
+            <p>This is a complex type of a linked list wherein a node has two references:<br>
+              One that connects to the next node in the sequence
+              Another that connects to the previous node.<br>
+              This structure allows traversal of the data elements in both directions (left to right and vice versa).<br><br>
+              Applications of DLL are:<br>
+              A music playlist with next song and previous song navigation options.<br>
+              The browser cache with BACK-FORWARD visited pages<br>
+              The undo and redo functionality on platforms such as word, paint etc, where you can reverse the node 
+              to get to the previous page.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
