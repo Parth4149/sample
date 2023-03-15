@@ -1,20 +1,21 @@
 
-// https://www.geeksforgeeks.org/debouncing-in-javascript/#:~:text=Debouncing%20is%20a%20programming%20practice,which%20a%20function%20gets%20invoked.
-// https://www.freecodecamp.org/news/javascript-debounce-example/
+function debounce(callback, delay, immediate = false) { // return a function
+  let timerId;
+  return function(...args) {
+    clearTimeout(timerId); // remove prev timerId
 
-function debounce(func, wait = 20, immediate = true) {
-  var timeout;
-  return function () {
-    var context = this, args = arguments;
-    var later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
+    const shouldCallImmediate = (timerId == null) && immediate;
+    if (shouldCallImmediate) {
+      callback.apply(this, args);
+    }
+
+    timerId = setTimeout(() => {
+      if (!immediate) {
+        callback.apply(this, args); // .apply allows us to pass this as an argument
+      }
+      timerId = null; // end of timeout, shouldCallImmediate can null if it is waiting for a delay to finish
+    }, delay);
+  }
 }
 
 const sliderImages = document.querySelectorAll('.slide-in');
@@ -30,14 +31,14 @@ function checkSlide(e) {
     const imageBottom = slideImage.offsetTop + slideImage.height;
     const isHalfShown = slideInAt > slideImage.offsetTop;
     const isNotScrolledPast = window.scrollY < imageBottom;
-    if(isHalfShown && isNotScrolledPast) {
+    if (isHalfShown && isNotScrolledPast) {
       slideImage.classList.add('active');
-    } 
+    }
     // else {
     //   slideImage.classList.remove('active');
     // }
   });
-} 
+}
 
 window.addEventListener('scroll', debounce(checkSlide));
 
